@@ -1,0 +1,13 @@
+
+
+<div class="edit">
+  <h3>Edit Posts</h3>
+  <form class="posts_form" action="/posts/<%=data._id%>?_method=put" method="post">
+    <label>Title Posts</label>
+    <input type="text" name="post[title]" value="<%=data.title%>">
+    <label>Body</label>
+    <textarea name="post[body]"><%=data.body%></textarea>
+    <button type="submit">Submit</button>
+  </form>
+  <a href="/posts/<%=data._id%>"><button>Back</button></a>
+</div>
