@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 var mongoose = require('mongoose');
 
-mongoose.connect("mongodb://ys:dyrjxmtmanel@ds053206.mlab.com:53206/ysmongo");
+mongoose.connect("mongodb://y@ds053206.mlab.com:53206/ysmongo");
 var db = mongoose.connection;
 db.once("open", function() {
   console.log("DB connected");
